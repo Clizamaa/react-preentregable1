@@ -6,7 +6,7 @@ const CartWidget = () => {
     <>
         <div className='flex flex-row items-center text-white'>
             <BsBag />
-            <p className='pl-3'>1</p>
+            <p className='pl-3'>2</p>
         </div>
     </>
   )
