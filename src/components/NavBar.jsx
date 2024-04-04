@@ -4,7 +4,7 @@ import CartWidget from './CartWidget'
 const NavBar = () => {
   return (
     <>
-      <nav className="container mx-auto px-6 py-3 bg-black">
+      <nav className="container mx-auto px-6 py-3 bg-slate-800">
         <div className="flex items-center justify-between">
           <div>
             <a href="#"><img className='rounded-full size-16 border  ' src="/public/logo.png" alt="logo" /></a>

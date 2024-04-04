@@ -7,7 +7,13 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer />
+      <div className="grid grid-cols-3">
+        {Array(9).fill().map((_, i) => (
+            <div key={i} className="p-15 flex flex-wrap items-center justify-center">
+              <ItemListContainer />
+            </div>
+        ))}
+      </div>
     </>
   )
 }
