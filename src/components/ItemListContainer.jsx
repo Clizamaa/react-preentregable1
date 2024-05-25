@@ -23,7 +23,7 @@ const ItemListContainer = () => {
           key={i}
           className="p-15 flex flex-wrap items-center justify-center"
         >
-          <div className="flex-shrink-0 m-6 relative overflow-hidden bg-slate-700 rounded-lg max-w-xs shadow-lg">
+          <div className="flex-shrink-0 m-6 relative overflow-hidden bg-slate-700 rounded-lg w-56 shadow-lg">
             <svg
               className="absolute bottom-0 left-0 mb-16"
               viewBox="0 0 375 283"
@@ -49,7 +49,7 @@ const ItemListContainer = () => {
             </svg>
             <div className="relative h-40 pt-10 px-10 flex items-center justify-center">
               <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
-              <img className="relative w-20" src={item.image} alt="" />
+              <img className="relative w-36" src={item.image} alt="" />
             </div>
             <div className="relative text-white px-6 pb-6 mt-6">
               <div className="flex flex-col items-center">
@@ -72,3 +72,13 @@ const ItemListContainer = () => {
 };
 
 export default ItemListContainer;
+
+// category
+// description
+// image
+// price
+// title
+// men's clothing
+// jewelery
+// electronics
+// women's clothing
