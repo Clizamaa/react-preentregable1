@@ -73,12 +73,4 @@ const ItemListContainer = () => {
 
 export default ItemListContainer;
 
-// category
-// description
-// image
-// price
-// title
-// men's clothing
-// jewelery
-// electronics
-// women's clothing
+
