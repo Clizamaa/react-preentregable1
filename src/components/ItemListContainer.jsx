@@ -1,3 +1,4 @@
+import { getItemsFromCategory } from "../firebase/db";
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
@@ -8,15 +9,11 @@ const ItemListContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    if (id) {
-      fetch(`https://fakestoreapi.com/products/category/${id}`)
-        .then((res) => res.json())
-        .then((data) => setItems(data));
-    } else {
-      fetch("https://fakestoreapi.com/products")
-        .then((res) => res.json())
-        .then((data) => setItems(data));
-    }
+    const getAndSetItem = async () => {
+      const item = await getItemsFromCategory(id);
+      setItems(item);
+    };
+    getAndSetItem();
   }, [id]);
 
   return (
