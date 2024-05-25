@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 
-function itemCount({product}) {
+function itemCount() {
   const [count, setCount] = useState(0);
-  const { addToCart } = useCart();
 
   const add = () => {
     setCount(count + 1);
@@ -13,9 +12,9 @@ function itemCount({product}) {
     if (count > 0) setCount(count - 1);
   };
 
-  const handleAddToCart = () => {
-    addToCart( product, count);
-  };
+//   const handleAddToCart = () => {
+//     addToCart( product, count);
+//   };
   return (
     <div>
       <button
@@ -31,12 +30,12 @@ function itemCount({product}) {
       >
         +
       </button>
-      <button
+      {/* <button
         onClick={handleAddToCart}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 "
       >
         Add to Cart
-      </button>
+      </button> */}
     </div>
   );
 }

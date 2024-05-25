@@ -20,7 +20,6 @@ const Cart = () => {
                       <tr>
                         <th className="text-left font-semibold">Product</th>
                         <th className="text-center font-semibold">Price</th>
-                        <th className="text-center font-semibold">Quantity</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -36,7 +35,6 @@ const Cart = () => {
                           </div>
                         </td>
                         <td className="py-4">${`${product.price}`}</td>
-                        <td className="py-4">{`${product.quantity}`}</td>
                       </tr>
                     </tbody>
                   </table>

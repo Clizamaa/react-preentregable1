@@ -24,9 +24,11 @@ const CheckOutForm = () => {
     };
     createOrder(order);
 
-    console.log();
-
-
+    MySwal.fire({
+      title: "Order created",
+      icon: "success",
+      text: "Your order has been created successfully",
+    });
   };
 
   return (
