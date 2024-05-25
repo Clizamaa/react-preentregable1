@@ -1,8 +1,17 @@
-# React + Vite
+# E-Commerce Coderhouse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Descripción
+Proyecto web de e-commerce para entrega final de Coderhouse
 
-Currently, two official plugins are available:
+# Construido Con 🛠️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React - Framework Frontend
+Tailwind - Framework Css
+SweetAlert2 - Libreria de alertas
+Firebase - Base de datos
+React-Router - Rutas
+
+
+# Autor ✒️
+Christian Lizama
+
